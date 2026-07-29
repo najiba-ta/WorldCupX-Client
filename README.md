@@ -3,7 +3,7 @@
 [![Next.js](https://img.shields.io/badge/Next.js-16.2-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![Express.js](https://img.shields.io/badge/Express.js-5.2-lightgrey?style=flat-square&logo=express)](https://expressjs.com/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green?style=flat-square&logo=mongodb)](https://www.mongodb.com/)ß
+[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green?style=flat-square&logo=mongodb)](https://www.mongodb.com/)
 [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=flat-square&logo=vercel)](https://world-cup-x-client.vercel.app)
 
 > **WorldCupX** is a modern, high-performance web platform designed for football enthusiasts, tactical analysts, and FIFA World Cup fans. It combines real-time data exploration of national teams and top players with an AI-driven Tactical Assistant powered by Google Gemini AI.
