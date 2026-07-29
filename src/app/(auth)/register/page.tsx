@@ -48,6 +48,23 @@ export default function RegisterPage() {
         name: data.name,
         image: data.image || undefined,
         callbackURL: '/dashboard',
+        fetchOptions: {
+          onSuccess: async () => {
+            // After Better Auth creates the user, trigger our custom notification endpoint.
+            // This fires welcome notification to the user and alerts all admins.
+            try {
+              const apiBase = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api/v1';
+              await fetch(`${apiBase}/auth/notify-register`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                credentials: 'include',
+                body: JSON.stringify({ name: data.name, email: data.email }),
+              });
+            } catch (_) {
+              // Fail silently — notification is non-critical
+            }
+          },
+        },
       });
 
       if (authError) {
